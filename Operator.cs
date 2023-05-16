@@ -115,7 +115,7 @@ namespace Platikhulens_Forecast
 
             forecastNumber = nyAvg * vastePct;
 
-            forecast = (int)Math.Round(forecastNumber); 
+            forecast = (int)Math.Round(forecastNumber); // For at afrunde til korrekt til heltal 
 
             Console.WriteLine("Forecastet er: " + forecast);
             return forecast;
