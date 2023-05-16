@@ -23,16 +23,20 @@ namespace Platikhulens_Forecast
         public double vastePct = 1.15; //15% spildprocent 
         public int forecast; 
 
+
+        // Beregn sum og Middelværdien af antal solgte
         public float CalculateAvg()
         {
             foreach (var item in data)
             {
                 total += item;
-                avg = total / data.Count;
             }
+            avg = total / data.Count;
             Console.WriteLine(avg);
             return avg;
         }
+
+        //Beregn varians
         public float CalculateVari()
         {
             foreach(var item in data)
@@ -46,6 +50,8 @@ namespace Platikhulens_Forecast
             return variance;
                
         }
+
+        // Beregn standard afvigelse 
         public float CalculateStdDev()
         {
             stdDev = MathF.Sqrt(variance);
