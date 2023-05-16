@@ -1,4 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿
 
 namespace Platikhulens_Forecast
 {
@@ -10,7 +10,16 @@ namespace Platikhulens_Forecast
             Math.CalculateAvg();
             Math.CalculateVari();
             Math.CalculateStdDev();
+            Math.CalculateValues();
+            Math.CreateNewListOfNumbers();
+            Math.CalculateNewAverage();
+
+
+
+            Math.ForecastCalculator(); 
+
             Console.ReadLine();
+
         }
         
             
