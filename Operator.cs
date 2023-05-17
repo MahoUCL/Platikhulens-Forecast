@@ -20,7 +20,7 @@ namespace Platikhulens_Forecast
         public float upperValue;
         public float lowerValue;
         public float nyAvg;
-        public double vastePct = 1.15; //15% spildprocent 
+        public double WastePct = 1.15; //15% spildprocent 
         public int forecast; 
 
 
@@ -113,7 +113,7 @@ namespace Platikhulens_Forecast
         {
             double forecastNumber;
 
-            forecastNumber = nyAvg * vastePct;
+            forecastNumber = nyAvg * WastePct;
 
             forecast = (int)Math.Round(forecastNumber); // For at afrunde til korrekt til heltal 
 
